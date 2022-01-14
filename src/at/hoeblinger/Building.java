@@ -13,6 +13,11 @@ public class Building {
         residents.add(initialResident);
     }
 
+    public Building(int id, String[] initialResidents) {
+        this.id = id;
+        residents.addAll(List.of(initialResidents));
+    }
+
     public void addResident(String resident){
         if(!residents.contains(resident)){
             residents.add(resident);
