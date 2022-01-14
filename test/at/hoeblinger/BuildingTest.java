@@ -28,5 +28,12 @@ public class BuildingTest {
         assertEquals(b.getNumberOfResidents(), 2);
     }
 
+    @Test
+    public void itShouldReturn1_AfterAddingDuplicateResident(){
+        Building b = new Building(1234, "Test");
+        b.addResident("Test");
+        assertEquals(b.getNumberOfResidents(), 1);
+    }
+
 
 }
