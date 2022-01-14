@@ -41,5 +41,10 @@ public class BuildingTest {
         assertEquals(new Building(1234, residents).getNumberOfResidents(), 2);
     }
 
+    @Test
+    public void itShouldReturn1_GivenArrayOfDuplicates(){
+        String[] residents = {"Test", "Test"};
+        assertEquals(new Building(1234, residents).getNumberOfResidents(), 1);
+    }
 
 }

@@ -15,7 +15,11 @@ public class Building {
 
     public Building(int id, String[] initialResidents) {
         this.id = id;
-        residents.addAll(List.of(initialResidents));
+        for (String resident : initialResidents) {
+            if(!residents.contains(resident)){
+                residents.add(resident);
+            }
+        }
     }
 
     public void addResident(String resident){
