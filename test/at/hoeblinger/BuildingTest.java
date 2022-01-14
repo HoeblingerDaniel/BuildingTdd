@@ -47,4 +47,10 @@ public class BuildingTest {
         assertEquals(new Building(1234, residents).getNumberOfResidents(), 1);
     }
 
+    @Test
+    public void itShouldDoNothing_GivenNotExistentResident(){
+        Building b = new Building(1234, "Test");
+        b.removeResident("Test2");
+        assertEquals(b.getNumberOfResidents(), 1);
+    }
 }

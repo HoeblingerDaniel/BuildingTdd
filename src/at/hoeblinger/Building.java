@@ -31,4 +31,8 @@ public class Building {
     public int getNumberOfResidents(){
         return residents.size();
     }
+
+    public void removeResident(String resident){
+        residents.remove(resident);
+    }
 }
