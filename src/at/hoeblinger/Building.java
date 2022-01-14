@@ -13,6 +13,10 @@ public class Building {
         residents.add(initialResident);
     }
 
+    public void addResident(String resident){
+        residents.add(resident);
+    }
+
     public int getNumberOfResidents(){
         return residents.size();
     }

@@ -21,5 +21,12 @@ public class BuildingTest {
         assertEquals(new Building(1234, "Test").getNumberOfResidents(), 1);
     }
 
+    @Test
+    public void itShouldReturn2_AfterAddingResident(){
+        Building b = new Building(1234, "Test");
+        b.addResident("Test2");
+        assertEquals(b.getNumberOfResidents(), 2);
+    }
+
 
 }
