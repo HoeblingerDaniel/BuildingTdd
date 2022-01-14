@@ -8,9 +8,12 @@ public class Building {
     public int id;
     public List<String> residents = new LinkedList<>();
 
-
     public Building(int id, String initialResident){
         this.id = id;
         residents.add(initialResident);
+    }
+
+    public int getNumberOfResidents(){
+        return residents.size();
     }
 }

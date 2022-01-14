@@ -15,4 +15,11 @@ public class BuildingTest {
     public void itShouldReturnTest_GivenTest(){
         assertEquals(new Building(1234, "Test").residents.get(0), "Test");
     }
+
+    @Test
+    public void itShouldReturn1_Given1Resident(){
+        assertEquals(new Building(1234, "Test").getNumberOfResidents(), 1);
+    }
+
+
 }
