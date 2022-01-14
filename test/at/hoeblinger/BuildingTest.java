@@ -10,4 +10,9 @@ public class BuildingTest {
     public void itShouldReturn1234_Given1234() {
         assertEquals(new Building(1234, "test").id, 1234);
     }
+
+    @Test
+    public void itShouldReturnTest_GivenTest(){
+        assertEquals(new Building(1234, "Test").residents.get(0), "Test");
+    }
 }
