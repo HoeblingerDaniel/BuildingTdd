@@ -8,17 +8,14 @@ public class Building {
     public int id;
     public List<String> residents = new LinkedList<>();
 
-    public Building(int id, String initialResident){
-        this.id = id;
-        residents.add(initialResident);
+    public Building(int id, String initialResident) {
+        this(id, new String[]{initialResident});
     }
 
     public Building(int id, String[] initialResidents) {
         this.id = id;
         for (String resident : initialResidents) {
-            if(!residents.contains(resident)){
-                residents.add(resident);
-            }
+            addResident(resident);
         }
     }
 
